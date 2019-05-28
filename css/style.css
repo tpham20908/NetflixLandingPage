@@ -1,8 +1,10 @@
 :root {
   --primary-color: #e50914;
+  --dark-color: #141414;
   --black: #000;
   --white: #fff;
   --grey: #999;
+  --dark-grey: #3d3d3d;
 }
 
 * {
@@ -107,6 +109,48 @@ img {
   font-size: 1.8rem;
   line-height: 1.25;
   margin: 0 0 2rem;
+}
+
+/* container */
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* tabs */
+.tabs {
+  background-color: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid var(--dark-grey);
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tabs .container div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container div:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.tab-border {
+  border-bottom: var(--primary-color) 4px solid;
 }
 
 /* buttons */
